@@ -1,0 +1,172 @@
+/* STYLE UMUM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5eee6;
+    color: #3e2723;
+    padding: 40px 15px;
+}
+
+/* CONTAINER */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+/* JUDUL */
+h2 {
+    text-align: center;
+    color: #5d4037;
+    margin-bottom: 12px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #795548;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+th {
+    background: #795548;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f9f2ec;
+}
+
+tr:hover {
+    background: #eee0d3;
+}
+
+/* HASIL TOTAL */
+.hasil {
+    background: #f8eee5;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hasil p {
+    display: flex;
+    justify-content: space-between;
+    color: #4e342e;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.hasil p:last-child {
+    color: #2e7d32;
+    font-size: 20px;
+    border-top: 2px solid #c8a58b;
+    padding-top: 15px;
+}
+
+/* FORM */
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c8a58b;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #795548;
+    box-shadow: 0 0 5px rgba(121,85,72,0.3);
+}
+
+/* TOMBOL */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #795548;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4e342e;
+    transform: translateY(-2px);
+}
+
+/* PESAN ERROR */
+.error {
+    color: #d32f2f;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* PESAN BERHASIL */
+.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+}
